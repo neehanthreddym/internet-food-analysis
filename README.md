@@ -7,18 +7,18 @@ You can get the Dataset here: [Online Foods](https://www.kaggle.com/code/yinn94/
 
 ## **Methodology**
 ### Data Acquisition and Preprocessing
-- Data Source: We have collected the data from Kaggle, "onlinefoods.csv", containing the data relevant to food orders, such as customer info details and their feedback.
-- Import required libraries: In this step we import the required libraries like numpy, pandas, sea born, matplotlib time, label encoder and some other metrics libraries like accuracy score, precision score, f1 score etc.
-- Load the dataset: In this step we load the dataset called onlinefood.csv file by using pandas.
-- Basic Checks: Here we do basic checks like info of the data, if the data has any null values, describe the data to know mean, standard deviation to each column.
-- We dropped a column which is named 'Unnamed: 12’ in the data.
-- Exploratory Data Analysis: In this stage we plot graphs by using seaborn and matplotlib libraries and we compared columns how they behave.
-- Label Encoder: Label encoder is used to convert the objective type data to numerical data. In this stage we change the objective data to numerical data by using replace function or label encoder library.
-- Splitting the data for training and testing data: In this step we split the data for training and testing purpose with test size 0.25.
-- Model implementation:  Here we write the code for Random Forest and XG Boost, SVM Classifiers, and Gradient Boosting Classifier from scratch for the training and testing of the data. Provide arguments like n estimators, max depth, min sample split, learning rate etc.
-- Training and testing the data: In this step we train the data in both the models by using fit() and also we test the data in all models. We have also found the time taken for training the data in models by importing time library.
-- Evaluating the models: In this step we found accuracy score, precision score, recall score, f1 score for the testing data in XG Boost and Random Forest, SVM Classifiers, Gradient Boosting Classifier, Polynomial kernel function SVM and Radial Basis kernel function SVM models and we have done confusion matrix visualization for all models.
-- We plotted ROC Curve and Precision Recall curves.
+- `Data Source`: We have collected the data from Kaggle, "onlinefoods.csv", containing the data relevant to food orders, such as customer info details and their feedback.
+- `Import required libraries`: In this step we import the required libraries like numpy, pandas, sea born, matplotlib time, label encoder and some other metrics libraries like accuracy score, precision score, f1 score etc.
+- `Load the dataset`: In this step we load the dataset called onlinefood.csv file by using pandas.
+- `Basic Checks`: Here we do basic checks like info of the data, if the data has any null values, describe the data to know mean, standard deviation to each column.
+- We `dropped` a column which is named 'Unnamed: 12’ in the data.
+- `Exploratory Data Analysis`: In this stage we plot graphs by using seaborn and matplotlib libraries and we compared columns how they behave.
+- `Label Encoder`: Label encoder is used to convert the objective type data to numerical data. In this stage we change the objective data to numerical data by using replace function or label encoder library.
+- `Splitting the data for training and testing data`: In this step we split the data for training and testing purpose with test size 0.25.
+- `Model implementation`:  Here we write the code for Random Forest and XG Boost, SVM Classifiers, and Gradient Boosting Classifier from scratch for the training and testing of the data. Provide arguments like n estimators, max depth, min sample split, learning rate etc.
+- `Training and testing the data`: In this step we train the data in both the models by using fit() and also we test the data in all models. We have also found the time taken for training the data in models by importing time library.
+- `Evaluating the models`: In this step we found accuracy score, precision score, recall score, f1 score for the testing data in XG Boost and Random Forest, SVM Classifiers, Gradient Boosting Classifier, Polynomial kernel function SVM and Radial Basis kernel function SVM models and we have done confusion matrix visualization for all models.
+- We plotted `ROC Curve` and `Precision Recall Curve` for all models and comared.
 
 ## **Models used**
 - Random Forest Classifier
