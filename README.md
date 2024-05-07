@@ -2,7 +2,7 @@
 
 ## **Dataset**
 The dataset 'onlinefoods.csv' we are using for this study is being fetched from Kaggle. This dataset contains 388 rows and 13 features including the unnecessary columns, which are of type float64 (2), int64 (3), and object (8).
-[Dataset](https://www.kaggle.com/code/yinn94/food-visualization-classification-acc-0-91/input)
+Dataset: [Online Foods](https://www.kaggle.com/code/yinn94/food-visualization-classification-acc-0-91/input)
 
 ## **Methodology**
 ### Data Acquisition and Preprocessing
@@ -29,10 +29,21 @@ The dataset 'onlinefoods.csv' we are using for this study is being fetched from 
 - Given that it has the lowest values off the diagonal, the XGBoost model seems to work the best.
 - When it comes to class 1 prediction, the Gradient Boosting model seems to make some mistakes, but it's difficult to compare these to the Random Forest model's errors.
 
+## **Precision-Recall Curve**
+![image](https://github.com/neehanthreddym/internet-food-analysis/assets/167118432/430e6c9c-9e91-4dfd-b6b2-b208e26854c9)
+
 ## **Evaluation metrics**
-- XGBoost: The evaluation metrics indicate that XGBoost is the top performer. As proven by the F1-score, it gains the maximum accuracy and strikes a good balance between recall and precision.
-- Gradient Boosting Classifier: Although it has the highest precision, it may miss a larger percentage of real positive cases due to its lower recall and F1-score when compared to XGBoost.
-- Random Forest: Out of the three, it has the lowest accuracy and F1-score but is the fastest to train.
+------------------------------------------------------------------------------------------------------
+Model             | Accuarcy           | Precision          | Recall             | F1-score
+------------------------------------------------------------------------------------------------------
+Random Forest     | 0.905511811023622  | 0.8615384615384616 | 0.9491525423728814 | 0.903225806451613
+XGBoost           | 0.937007874015748  | 0.9180327868852459 | 0.9491525423728814 | 0.9333333333333333
+Gradient Boosting | 0.9291338582677166 | 0.9464285714285714 | 0.8983050847457628 | 0.9217391304347826
+------------------------------------------------------------------------------------------------------
+
+`XGBoost`: The evaluation metrics indicate that XGBoost is the top performer. As proven by the F1-score, it gains the maximum accuracy and strikes a good balance between recall and precision.
+`Gradient Boosting Classifier`: Although it has the highest precision, it may miss a larger percentage of real positive cases due to its lower recall and F1-score when compared to XGBoost.
+`Random Forest`: Out of the three, it has the lowest accuracy and F1-score but is the fastest to train.
 
 ## **Limitations**
 - Predictions in real-world scenarios may be biased or inaccurate due to limitations or biases in the data used.
