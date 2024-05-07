@@ -40,9 +40,9 @@ Dataset: [Online Foods](https://www.kaggle.com/code/yinn94/food-visualization-cl
 | XGBoost           | 0.937007874015748  | 0.9180327868852459 | 0.9491525423728814 | 0.9333333333333333 |
 | Gradient Boosting | 0.9291338582677166 | 0.9464285714285714 | 0.8983050847457628 | 0.9217391304347826 |
 
-`XGBoost`: The evaluation metrics indicate that XGBoost is the top performer. As proven by the F1-score, it gains the maximum accuracy and strikes a good balance between recall and precision.
-`Gradient Boosting Classifier`: Although it has the highest precision, it may miss a larger percentage of real positive cases due to its lower recall and F1-score when compared to XGBoost.
-`Random Forest`: Out of the three, it has the lowest accuracy and F1-score but is the fastest to train.
+- `XGBoost`: The evaluation metrics indicate that XGBoost is the top performer. As proven by the F1-score, it gains the maximum accuracy and strikes a good balance between recall and precision.
+- `Gradient Boosting Classifier`: Although it has the highest precision, it may miss a larger percentage of real positive cases due to its lower recall and F1-score when compared to XGBoost.
+- `Random Forest`: Out of the three, it has the lowest accuracy and F1-score but is the fastest to train.
 
 ## **Limitations**
 - Predictions in real-world scenarios may be biased or inaccurate due to limitations or biases in the data used.
