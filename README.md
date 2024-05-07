@@ -2,7 +2,8 @@
 
 ## **Dataset**
 The dataset 'onlinefoods.csv' we are using for this study is being fetched from Kaggle. This dataset contains 388 rows and 13 features including the unnecessary columns, which are of type float64 (2), int64 (3), and object (8).
-Dataset: [Online Foods](https://www.kaggle.com/code/yinn94/food-visualization-classification-acc-0-91/input)
+
+You can get the Dataset here: [Online Foods](https://www.kaggle.com/code/yinn94/food-visualization-classification-acc-0-91/input)
 
 ## **Methodology**
 ### Data Acquisition and Preprocessing
@@ -50,5 +51,6 @@ Dataset: [Online Foods](https://www.kaggle.com/code/yinn94/food-visualization-cl
 - It is possible that the models require retraining or fine-tuning for varying customer demographics or geographic locations, and that the dataset utilized does not accurately represent the entire population.
 - Gradient Boosting Classifier's performance metrics were slightly lower than XGBoost's, despite providing improved interpretability.
 
-`Overall`:
+# **Conclusion**
+
 While all three models performed well, XGBoost showed a tiny advantage in terms of accuracy and F1-score. XGBoost performed exceptionally well in testing speed, while Random Forest provided the fastest training times. Even though it was slower, the gradient boosting classifier offered a model that might be easier to understand. All three of the models may be useful resources for meal delivery services, according to our evaluation metrics and confusion matrices. By reviewing customer feedback and personalizing recommendations based on their location, they can optimize delivery decisions and ultimately improve the dining experience for their customers.
